@@ -1,0 +1,16 @@
+# Site settings
+title:            CSSConf Oakland 2014
+email:            contact@cssconfoak.land
+description:      A conference for builders of the web・Everyone is welcome・December 9th 2014
+baseurl:          ""
+url:              "http://cssconfoak.land"
+twitter_username: cssconfoak
+github_username:  cssconfoak
+
+# Build settings
+markdown: kramdown
+
+# Permalink
+# Use of `relative_permalinks` ensures post links from the index work properly.
+permalink:           pretty
+relative_permalinks: true

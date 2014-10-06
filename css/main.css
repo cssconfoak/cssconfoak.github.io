@@ -1,0 +1,58 @@
+html {
+  font-size: 100%;
+}
+
+body {
+  background-color: #222;
+  color: #fffdeb;
+  font: 500 1.125rem/1.5 "ff-meta-serif-web-pro", Georgia, Times, serif;
+}
+
+a {
+  color: #fff59e;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: "nimbus-sans-condensed", Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  line-height: .9;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3.5rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+footer {
+  text-align: center;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.list-unstyled {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+@media screen and (max-width: 768px) {
+
+  .container {
+    width: 85%;
+  }
+
+}
