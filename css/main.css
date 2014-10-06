@@ -1,21 +1,50 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
 html {
   font-size: 100%;
 }
 
 body {
   background-color: #222;
-  color: #fffdeb;
+  color: #d0ceba;
   font: 500 1.125rem/1.5 "ff-meta-serif-web-pro", Georgia, Times, serif;
+  -webkit-font-smooting: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table;
+}
+
+.cf:after {
+  clear: both;
 }
 
 a {
   color: #fff59e;
 }
 
+a:hover {
+  text-decoration: none;
+}
+
+ul, p {
+  margin: 0 0 30px 0;
+}
+
 h1, h2, h3, h4, h5 {
+  margin: 40px 0;
+  line-height: .9;
+  color: #fff; 
+}
+
+h1, h2, h3, h4, h5, .button {
   font-family: "nimbus-sans-condensed", Helvetica Neue, Helvetica, Arial, sans-serif;
   font-weight: 700;
-  line-height: .9;
   text-transform: uppercase;
 }
 
@@ -37,22 +66,121 @@ h4 {
 
 footer {
   text-align: center;
+  font-size: .875rem;
 }
 
 .container {
   margin: 0 auto;
 }
 
+/*--------------------------------------------------------------------
+* Lists 
+--------------------------------------------------------------------*/
+
 .list-unstyled {
-  padding: 0;
-  margin: 0;
+  padding-left: 0;
+  margin-left: 0;
   list-style: none;
+}
+
+.list-inline li {
+  display: inline-block;
+}
+
+/*--------------------------------------------------------------------
+* Forms 
+--------------------------------------------------------------------*/
+
+::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, .6);
+}
+
+::-moz-placeholder {
+  color: rgba(255, 255, 255, .6); 
+}
+
+input[type=email] {
+  border: 2px solid white;
+  padding: 0 15px;
+  height: 50px;
+  background-color: transparent;
+}
+
+input[type=email]:focus {
+  outline: none;
+}
+
+/*--------------------------------------------------------------------
+* Buttons 
+--------------------------------------------------------------------*/
+
+.button {
+  padding: 0 30px;
+  background-color: white;
+  border: none;
+  color: #222;
+  height: 55px;
+  font-size: 2rem;
+}
+
+/*--------------------------------------------------------------------
+* Newsletter Sign Up 
+--------------------------------------------------------------------*/
+
+.newsletter-signup {
+  margin: 80px 0 40px 0;
+  text-align: center;
+}
+
+/*--------------------------------------------------------------------
+* Mobile 
+--------------------------------------------------------------------*/
+
+@media screen and (max-width: 489px) {
+
+  .newsletter-signup .mc-field-group {
+    margin-bottom: 10px;
+  }
+
+  input[type=email],
+  .button {
+    width: 100%;
+  }
+
+}
+
+
+@media screen and (min-width: 490px) {
+
+  .newsletter-signup .mc-field-group,
+  .newsletter-signup .clear {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  input[type=email] {
+    margin-right: 10px;
+    min-width: 250px;
+  }
+
 }
 
 @media screen and (max-width: 768px) {
 
   .container {
     width: 85%;
+  }
+
+}
+
+/*--------------------------------------------------------------------
+* Desktop 
+--------------------------------------------------------------------*/
+
+@media screen and (min-width: 769px) {
+
+  .container {
+    width: 60%;
   }
 
 }
