@@ -28,3 +28,5 @@ If you are being harassed, notice that someone else is being harassed, or have a
 Conference staff will be happy to help participants contact hotel/venue security or local law enforcement, provide escorts, or otherwise assist those experiencing harassment to feel safe for the duration of the conference. We value your attendance.
 
 We expect participants to follow these rules at conference and workshop venues and conference-related social events.
+
+Original source: [JSConf's Code of Conduct](http://2012.jsconf.us/#/about) and [Ada Intiative](http://geekfeminism.wikia.com/wiki/Conference_anti-harassment/Policy). Please help by translating or improving in [Github repository](https://github.com/confcodeofconduct/confcodeofconduct.com). Licensed under [Creative Commons Attribution 3.0 Unported License](http://creativecommons.org/licenses/by/3.0/deed.en_US).
