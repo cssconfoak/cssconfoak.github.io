@@ -110,10 +110,6 @@ footer {
 * Images 
 --------------------------------------------------------------------*/
 
-figure {
-  margin: 0 auto;
-}
-
 img {
   max-width: 100%;
   cursor: pointer;
@@ -128,12 +124,11 @@ img:hover {
 --------------------------------------------------------------------*/
 
 section {
-  margin: 60px 0 30px 0;
-  padding-bottom: 60px;
   border-bottom: 5px solid rgba(255, 255, 255, .1);
 }
 
-.container {
+.container,
+figure {
   margin: 0 auto;
 }
 
@@ -220,11 +215,12 @@ input[type=email]:focus {
 }
 
 /*--------------------------------------------------------------------
-* Intro 
+* Venue 
 --------------------------------------------------------------------*/
 
-.intro {
-  font-size: 1.5rem;
+.venue figure {
+  margin-bottom: 30px;
+  width: auto;
 }
 
 /*--------------------------------------------------------------------
@@ -277,11 +273,6 @@ input[type=email]:focus {
   background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+Cjxzdmcgd2lkdGg9IjY1cHgiIGhlaWdodD0iNTdweCIgdmlld0JveD0iMCAwIDY1IDU3IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnNrZXRjaD0iaHR0cDovL3d3dy5ib2hlbWlhbmNvZGluZy5jb20vc2tldGNoL25zIj4KICAgIDwhLS0gR2VuZXJhdG9yOiBTa2V0Y2ggMy4xICg4NzUxKSAtIGh0dHA6Ly93d3cuYm9oZW1pYW5jb2RpbmcuY29tL3NrZXRjaCAtLT4KICAgIDx0aXRsZT5VbnRpdGxlZCAzPC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGRlZnM+PC9kZWZzPgogICAgPGcgaWQ9IlBhZ2UtMSIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCIgc2tldGNoOnR5cGU9Ik1TUGFnZSI+CiAgICAgICAgPHBhdGggZD0iTTYzLDguMTEwMzUxNTYgQzYwLjY5OTIxODgsOS4xMzk2NDg0NCA1OC4yNzczNDM4LDkuODM1OTM3NSA1NS42NzM4MjgxLDEwLjEzODY3MTkgQzU4LjMzNzg5MDYsOC41NjQ0NTMxMiA2MC4zMzU5Mzc1LDYuMDUxNzU3ODEgNjEuMjc0NDE0MSwzLjA4NDk2MDk0IEM1OC44NTI1MzkxLDQuNTM4MDg1OTQgNTYuMDk3NjU2Miw1LjU5NzY1NjI1IDUzLjI1MTk1MzEsNi4xNzI4NTE1NiBDNTAuODYwMzUxNiwzLjc1MDk3NjU2IDQ3LjU2MDU0NjksMi4xNzY3NTc4MSA0My44OTc0NjA5LDIuMTc2NzU3ODEgQzM2Ljg3NDAyMzQsMi4xNzY3NTc4MSAzMS4yMTI4OTA2LDcuODM3ODkwNjIgMzEuMjEyODkwNiwxNC44NjEzMjgxIEMzMS4yMTI4OTA2LDE1Ljg2MDM1MTYgMzEuMjczNDM3NSwxNi44ODk2NDg0IDMxLjQ4NTM1MTYsMTcuNzk3ODUxNiBDMjAuOTUwMTk1MywxNy4yMjI2NTYyIDExLjYyNTk3NjYsMTIuNDM5NDUzMSA1LjI5ODgyODEyLDQuNzUgQzQuMjM5MjU3ODEsNi42MjY5NTMxMiAzLjU3MzI0MjE5LDguNTY0NDUzMTIgMy41NzMyNDIxOSwxMC45MjU3ODEyIEMzLjU3MzI0MjE5LDE1LjI4NTE1NjIgNS44MTM0NzY1NiwxOS4xNjAxNTYyIDkuMjY0NjQ4NDQsMjEuNDYwOTM3NSBDNy4xNzU3ODEyNSwyMS40MDAzOTA2IDUuMjM4MjgxMjUsMjAuODI1MTk1MyAzLjUxMjY5NTMxLDE5Ljg4NjcxODggTDMuNTEyNjk1MzEsMjAuMDM4MDg1OSBDMy41MTI2OTUzMSwyNi4yMTM4NjcyIDcuOTAyMzQzNzUsMzEuMzYwMzUxNiAxMy43MTQ4NDM4LDMyLjUxMDc0MjIgQzEyLjYyNSwzMi44MTM0NzY2IDExLjQ3NDYwOTQsMzIuOTY0ODQzOCAxMC4zMjQyMTg4LDMyLjk2NDg0MzggQzkuNTM3MTA5MzgsMzIuOTY0ODQzOCA4Ljc1LDMyLjg3NDAyMzQgNy45NjI4OTA2MiwzMi43MjI2NTYyIEM5LjUzNzEwOTM4LDM3Ljc0ODA0NjkgMTQuMjkwMDM5MSw0MS41MDE5NTMxIDE5Ljc5OTgwNDcsNDEuNTYyNSBDMTUuNTAwOTc2Niw0NS4wMTM2NzE5IDkuOTYwOTM3NSw0Ny41ODY5MTQxIDQuMDI3MzQzNzUsNDcuNTg2OTE0MSBDMi45OTgwNDY4OCw0Ny41ODY5MTQxIDEuOTk5MDIzNDQsNDcuNTI2MzY3MiAxLDQ3LjM3NSBDNi42MDA1ODU5NCw1MC45Nzc1MzkxIDEzLjM1MTU2MjUsNTIuNTUxNzU3OCAyMC41MjYzNjcyLDUyLjU1MTc1NzggQzQzLjg5NzQ2MDksNTIuNTUxNzU3OCA1Ni42NzI4NTE2LDMzLjE3Njc1NzggNTYuNjcyODUxNiwxNi4zNzUgTDU2LjY3Mjg1MTYsMTQuNzA5OTYwOSBDNTkuMTI1LDEyLjkyMzgyODEgNjEuMjc0NDE0MSwxMC43MTM4NjcyIDYzLDguMTEwMzUxNTYgTDYzLDguMTEwMzUxNTYgWiIgaWQ9InR3aXR0ZXIiIGZpbGw9IiNGRkZGRkYiIHNrZXRjaDp0eXBlPSJNU1NoYXBlR3JvdXAiPjwvcGF0aD4KICAgIDwvZz4KPC9zdmc+);
 }
 
-.speaker h4,
-.speaker p {
-  padding: 0 15px;
-}
-
 .no-speaker {
   align-items: center;
   -webkit-box-align: center;
@@ -300,6 +291,10 @@ input[type=email]:focus {
 --------------------------------------------------------------------*/
 
 @media screen and (max-width: 489px) {
+
+  section {
+    padding-bottom: 30px;
+  }
 
   .newsletter-signup .mc-field-group {
     margin-bottom: 10px;
@@ -329,6 +324,11 @@ input[type=email]:focus {
 
 @media screen and (min-width: 490px) {
 
+  section {
+    margin: 60px 0 30px 0;
+    padding-bottom: 60px;
+  }
+
   .newsletter-signup .mc-field-group,
   .newsletter-signup .clear {
     display: inline-block;
@@ -350,7 +350,12 @@ input[type=email]:focus {
     height: 55px;
   }
 
-  .speaker img {
+  .speaker h4,
+  .speaker p {
+    padding: 0 15px;
+  }
+
+  .speaker:not(.organiser) img {
     width: 400px;
     min-height: 300px;
   }
@@ -360,6 +365,11 @@ input[type=email]:focus {
     width: 50%;
     padding: 0 20px;
   }
+
+  .intro {
+    font-size: 1.5rem;
+  }
+
 
 }
 
