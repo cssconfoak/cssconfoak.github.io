@@ -1,22 +1,8 @@
-<header class="site-header">
+<header role="beanner" class="text-centered">
 
-  <div class="wrapper">
-
-    <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
-
-    <nav class="site-nav">
-      <a href="#" class="menu-icon">
-      </a>
-
-      <div class="trigger">
-        {% for page in site.pages %}
-          {% if page.title %}
-          <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-          {% endif %}
-        {% endfor %}
-      </div>
-    </nav>
-
+  <div class="container">
+    <a class="logo cssconf" href="{{ site.baseurl }}/" title="{{ site.title }}">{{ site.title }}</a>
+    <h4>December 9th ∙ Oakland, CA</h4>
   </div>
 
 </header>
