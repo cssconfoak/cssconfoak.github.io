@@ -88,17 +88,6 @@ layout: default
 
 </section>
 
-<section>
-  <h2>News</h2>
-  <ul class="post-list list-unstyled">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span> ∙
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      </li>
-    {% endfor %}  
-</section>
-
 <section class="cfp text-centered">
   <h2>Call for Papers</h2>
   <p>The Call for Papers for CSSConf is <strong>open</strong>. We're gathering submissions through Github. If you are not feeling comfortable with applying publicly, please drop a line at <a href="mailto:contact+cfp@cssconfoak.land">contact+cfp@cssconfoak.land</a>—we provide full discretion.</p>
