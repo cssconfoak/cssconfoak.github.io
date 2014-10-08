@@ -219,6 +219,7 @@ input[type=email]:focus {
 --------------------------------------------------------------------*/
 
 .venue figure {
+  margin-right: 20px;
   margin-bottom: 30px;
   width: auto;
 }
