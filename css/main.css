@@ -43,6 +43,15 @@ small {
   font-size: .875rem;
 }
 
+.sponsor-mailchimp {
+  display: block;
+  width: 500px;
+  height: 150px;
+  background: url("../img/sponsor-mailchimp.svg") no-repeat 0 0;
+  background-size: contain;
+  opacity: .5;
+}
+
 /*--------------------------------------------------------------------
 * Headings 
 --------------------------------------------------------------------*/
@@ -340,6 +349,11 @@ input[type=email]:focus {
 
   .container {
     width: 85%;
+  }
+
+  .sponsor-mailchimp {
+    max-width: 100%;
+    height: 100px;
   }
 
 }
