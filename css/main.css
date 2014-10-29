@@ -43,15 +43,6 @@ small {
   font-size: .875rem;
 }
 
-.sponsor-mailchimp {
-  display: block;
-  width: 500px;
-  height: 150px;
-  background: url("../img/sponsor-mailchimp.svg") no-repeat 0 0;
-  background-size: contain;
-  opacity: .5;
-}
-
 /*--------------------------------------------------------------------
 * Headings 
 --------------------------------------------------------------------*/
@@ -264,6 +255,34 @@ input[type=email]:focus {
 }
 
 /*--------------------------------------------------------------------
+* Sponsors 
+--------------------------------------------------------------------*/
+
+.sponsors h3:last-of-type {
+  margin-top: 0;
+}
+
+.sponsor {
+  display: block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: .5;
+}
+
+.sponsor-mailchimp {
+  width: 500px;
+  height: 150px;
+  background-image: url("../img/sponsor-mailchimp.svg");
+}
+
+.sponsor-bootstrap {
+  height: 100px;
+  background-image: url("../img/sponsor-bootstrap.svg");
+}
+
+
+/*--------------------------------------------------------------------
 * Newsletter Sign Up 
 --------------------------------------------------------------------*/
 
@@ -351,7 +370,7 @@ input[type=email]:focus {
     width: 85%;
   }
 
-  .sponsor-mailchimp {
+  .sponsor {
     max-width: 100%;
     height: 100px;
   }
