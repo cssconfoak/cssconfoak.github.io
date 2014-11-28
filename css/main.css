@@ -97,6 +97,7 @@ h4 {
 --------------------------------------------------------------------*/
 
 footer {
+  padding-top: 30px;
   font-size: .875rem;
 }
 
@@ -198,23 +199,27 @@ input[type=email]:focus {
   text-decoration: none;
 }
 
-.cfp p {
-  text-align: left;
-}
-
 /*--------------------------------------------------------------------
 * Venue 
 --------------------------------------------------------------------*/
 
 .venue figure {
-  margin-right: 20px;
-  margin-bottom: 30px;
-  width: auto;
+  margin: 0 40px 30px 0;
+  width: 50%;
+  text-align: center;
+}
+
+.venue figure img {
+  margin: 0 auto;
 }
 
 /*--------------------------------------------------------------------
 * Speakers 
 --------------------------------------------------------------------*/
+
+.speaker {
+  text-align: center;
+}
 
 .speaker figure {
   position: relative;
@@ -240,6 +245,14 @@ input[type=email]:focus {
 .no-speaker {
   align-items: center;
   -webkit-box-align: center;
+}
+
+/*--------------------------------------------------------------------
+* Hotels 
+--------------------------------------------------------------------*/
+
+.hotels dd {
+  margin: 0;
 }
 
 /*--------------------------------------------------------------------
@@ -271,14 +284,6 @@ input[type=email]:focus {
 
 
 /*--------------------------------------------------------------------
-* Newsletter Sign Up 
---------------------------------------------------------------------*/
-
-.newsletter-signup {
-  margin: 80px 0 40px 0;
-}
-
-/*--------------------------------------------------------------------
 * Mobile 
 --------------------------------------------------------------------*/
 
@@ -286,15 +291,6 @@ input[type=email]:focus {
 
   section {
     padding-bottom: 30px;
-  }
-
-  .newsletter-signup .mc-field-group {
-    margin-bottom: 10px;
-  }
-
-  input[type=email],
-  .button {
-    width: 100%;
   }
 
   .cssconf {
@@ -310,17 +306,6 @@ input[type=email]:focus {
   section {
     margin: 60px 0 30px 0;
     padding-bottom: 60px;
-  }
-
-  .newsletter-signup .mc-field-group,
-  .newsletter-signup .clear {
-    display: inline-block;
-    vertical-align: middle;
-  }
-
-  input[type=email] {
-    margin-right: 5px;
-    min-width: 250px;
   }
 
   .cssconf {
@@ -361,6 +346,14 @@ input[type=email]:focus {
   .sponsor {
     max-width: 100%;
     height: 100px;
+  }
+
+  .venue figure {
+    width: 100%;
+  }
+
+  .venue figure img {
+    max-width: 400px;
   }
 
 }
