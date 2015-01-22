@@ -76,6 +76,15 @@ h4 {
   font-size: 1.5rem;
 }
 
+header {
+  background: url("/img/header.jpg") 0 0 no-repeat;
+  background-size: contain;
+}
+
+header h1 {
+  margin-top: 0;
+}
+
 /*--------------------------------------------------------------------
 * Logo 
 --------------------------------------------------------------------*/
@@ -248,14 +257,6 @@ input[type=email]:focus {
 }
 
 /*--------------------------------------------------------------------
-* Hotels 
---------------------------------------------------------------------*/
-
-.hotels dd {
-  margin: 0;
-}
-
-/*--------------------------------------------------------------------
 * Sponsors 
 --------------------------------------------------------------------*/
 
@@ -289,6 +290,10 @@ input[type=email]:focus {
 
 @media screen and (max-width: 489px) {
 
+  header {
+    padding-top: 180px;
+  }
+
   section {
     padding-bottom: 30px;
   }
@@ -299,7 +304,6 @@ input[type=email]:focus {
   }
 
 }
-
 
 @media screen and (min-width: 490px) {
 
@@ -337,7 +341,19 @@ input[type=email]:focus {
 
 }
 
+@media screen and (min-width: 491px) {
+
+  header {
+    padding-top: 400px;
+  }
+
+}
+
 @media screen and (max-width: 768px) {
+
+  header {
+    min-height: 400px;
+  }
 
   .container {
     width: 85%;
@@ -363,6 +379,12 @@ input[type=email]:focus {
 --------------------------------------------------------------------*/
 
 @media screen and (min-width: 769px) {
+
+  header {
+    padding-top: 500px;
+    min-height: 800px;
+    background-position: 0 -100px;
+  }
 
   .container {
     width: 80%;
